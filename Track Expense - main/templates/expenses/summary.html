@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h2>Expense Summary</h2>
+
+<div>
+    <p><strong>Daily Expense:</strong> {{ daily_expense }}</p>
+    <p><strong>Weekly Expense:</strong> {{ weekly_expense }}</p>
+    <p><strong>Monthly Expense:</strong> {{ monthly_expense }}</p>
+    <p><strong>Yearly Expense:</strong> {{ yearly_expense }}</p>
+</div>
+
+{% if total_forecasted_expenses %}
+    <h3>Total Predicted Expense at the end of 30 days: {{ total_forecasted_expenses }}</h3>
+{% endif %}
+
+{% if category_forecasts %}
+    <h3>Total Forecasted Expenses per Category:</h3>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Total Forecasted Expenses</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for category, total in category_forecasts.items %}
+            <tr>
+                <td>{{ category }}</td>
+                <td>{{ total }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+
+{% if forecast_data %}
+    <h3>Expense Forecast for Next 30 Days</h3>
+    <img src="{% static 'img/forecast_plot.png' %}" alt="Expense Forecast Chart" style="max-width: 100%; height: auto;">
+{% endif %}
+
+{% endblock %}

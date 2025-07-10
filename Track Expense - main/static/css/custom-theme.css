@@ -1,0 +1,104 @@
+/* Custom green theme with dark mode support */
+
+:root {
+  --primary-color: #28a745;
+  --background-color: #ffffff;
+  --text-color: #ff9797;
+  --sidebar-bg-color: #4caf50; /* money green color */
+  --sidebar-text-color: #e6f4ea; /* light money color */
+  --link-color: #e6f4ea; /* light money color */
+  --link-hover-color: #c8e6c9; /* lighter money color */
+  --button-bg-color: #708238; /* greenGrey button background */
+  --button-hover-bg-color: #556B2F; /* darker greenGrey button hover */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#sidebar {
+  background-color: var(--sidebar-bg-color);
+  color: var(--sidebar-text-color);
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg-color);
+  color: var(--sidebar-text-color);
+}
+
+.sidebar .nav-link {
+  color: var(--sidebar-text-color) !important;
+}
+
+.sidebar .nav-link.text-sand {
+  color: #f5deb3 !important;
+}
+
+.sidebar .nav-link {
+  color: #f5deb3 !important;
+}
+
+.sidebar .sidebar-heading {
+  color: #f5deb3 !important;
+}
+
+.sidebar .nav-link:hover {
+  color: var(--link-hover-color) !important;
+}
+
+.sidebar .sidebar-heading {
+  color: var(--sidebar-text-color) !important;
+}
+
+#sidebar ul li a:hover {
+  color: var(--link-hover-color);
+  background-color: transparent;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+.btn-primary {
+  background-color: var(--button-bg-color);
+  border-color: var(--button-bg-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--button-hover-bg-color);
+  border-color: var(--button-hover-bg-color);
+  color: #fff;
+}
+
+.navbar {
+  background-color: var(--sidebar-bg-color);
+  color: var(--sidebar-text-color);
+}
+
+.navbar a {
+  color: var(--sidebar-text-color);
+}
+
+.navbar a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Additional dark theme styles as needed */
+
+.btn-primary {
+  background-color: #708238 !important; /* greenGrey */
+  border-color: #708238 !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover {
+  background-color: #556B2F !important; /* darker greenGrey */
+  border-color: #556B2F !important;
+  color: #fff !important;
+}

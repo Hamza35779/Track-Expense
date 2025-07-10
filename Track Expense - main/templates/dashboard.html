@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Dashboard</h2>
+    <div class="row text-center">
+        <div class="col-md-3">
+            <div class="card p-3 mb-3">
+                <h6>Earnings (Daily)</h6>
+                <h4>Rs. {{ earnings_daily }}</h4>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-3 mb-3">
+                <h6>Earnings (Weekly)</h6>
+                <h4>Rs. {{ earnings_weekly }}</h4>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-3 mb-3">
+                <h6>Earnings (Monthly)</h6>
+                <h4>Rs. {{ earnings_monthly }}</h4>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-3 mb-3">
+                <h6>Earnings (Yearly)</h6>
+                <h4>Rs. {{ earnings_yearly }}</h4>
+            </div>
+        </div>
+    </div>
+
+    <h4>Earnings Overview</h4>
+    <canvas id="earningsChart" width="400" height="150"></canvas>
+
+    <h4 class="mt-4">Expenses Overview</h4>
+    <canvas id="expensesChart" width="400" height="150"></canvas>
+
+    <h4 class="mt-4">Savings Overview</h4>
+    <canvas id="savingsChart" width="400" height="150"></canvas>
+
+    <h4 class="mt-4">Revenue Sources</h4>
+    <canvas id="revenueChart" width="400" height="150"></canvas>
+</div>
+
+{% block js %}
+<script>
+    var ctx = document.getElementById('earningsChart').getContext('2d');
+    var earningsChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [{% for item in earnings_overview %}'{{ item.month }}',{% endfor %}],
+            datasets: [{
+                label: 'Earnings',
+                data: [{% for item in earnings_overview %}{{ item.amount }},{% endfor %}],
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 2,
+                fill: true,
+                tension: 0.3
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    var ctx2 = document.getElementById('revenueChart').getContext('2d');
+    var revenueChart = new Chart(ctx2, {
+        type: 'doughnut',
+        data: {
+            labels: [{% for key in revenue_sources.keys %}'{{ key }}',{% endfor %}],
+            datasets: [{
+                label: 'Revenue Sources',
+                data: [{% for value in revenue_sources.values %}{{ value }},{% endfor %}],
+                backgroundColor: [
+                    'rgba(75, 192, 192, 0.7)',
+                    'rgba(255, 206, 86, 0.7)',
+                    'rgba(255, 99, 132, 0.7)'
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(255, 99, 132, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            cutout: '70%',
+        }
+    });
+</script>
+{% endblock %}
+{% endblock %}
