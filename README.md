@@ -1,16 +1,16 @@
 # Track Expense
 
-![Dashboard Overview](./static/img/Screenshot 2025-07-10 002625.png)
-![Dashboard Earnings Chart](./static/img/Screenshot 2025-07-10 030416.png)
-![Earnings Overview and Revenue Sources](./static/img/Screenshot 2025-07-10 204124.png)
-![Expense Summary](./static/img/Screenshot 2025-07-10 204142.png)
-![Expenses List](./static/img/Screenshot 2025-07-10 204223.png)
-![Income List](./static/img/Screenshot 2025-07-10 204239.png)
-![Expense Forecast Table](./static/img/Screenshot 2025-07-10 204252.png)
+![Dashboard Overview](./static/img/Screenshot%202025-07-10%20002625.png)
+![Dashboard Earnings Chart](./static/img/Screenshot%202025-07-10%20030416.png)
+![Earnings Overview and Revenue Sources](./static/img/Screenshot%202025-07-10%20204124.png)
+![Expense Summary](./static/img/Screenshot%202025-07-10%20204142.png)
+![Expenses List](./static/img/Screenshot%202025-07-10%20204223.png)
+![Income List](./static/img/Screenshot%202025-07-10%20204239.png)
+![Expense Forecast Table](./static/img/Screenshot%202025-07-10%20204252.png)
 ![Expense Forecast for Next 30 Days](./static/img/forecast_plot.png)
-![Preferences Page](./static/img/Screenshot 2025-07-10 204311.png)
-![User Profile Page](./static/img/Screenshot 2025-07-10 204326.png)
-![Goal List Page](./static/img/Screenshot 2025-07-10 204339.png)
+![Preferences Page](./static/img/Screenshot%202025-07-10%20204311.png)
+![User Profile Page](./static/img/Screenshot%202025-07-10%20204326.png)
+![Goal List Page](./static/img/Screenshot%202025-07-10%20204339.png)
 
 ## Overview
 
