@@ -1,16 +1,17 @@
 # Track Expense
+<img width="965" height="595" alt="Screenshot 2025-07-10 204142" src="https://github.com/user-attachments/assets/1bc5435b-e683-43a0-b6e9-f1127b53b5aa" />
 
-![Dashboard Overview](./static/img/Screenshot%202025-07-10%20002625.png)
-![Dashboard Earnings Chart](./static/img/Screenshot%202025-07-10%20030416.png)
-![Earnings Overview and Revenue Sources](./static/img/Screenshot%202025-07-10%20204124.png)
-![Expense Summary](./static/img/Screenshot%202025-07-10%20204142.png)
-![Expenses List](./static/img/Screenshot%202025-07-10%20204223.png)
-![Income List](./static/img/Screenshot%202025-07-10%20204239.png)
-![Expense Forecast Table](./static/img/Screenshot%202025-07-10%20204252.png)
-![Expense Forecast for Next 30 Days](./static/img/forecast_plot.png)
-![Preferences Page](./static/img/Screenshot%202025-07-10%20204311.png)
-![User Profile Page](./static/img/Screenshot%202025-07-10%20204326.png)
-![Goal List Page](./static/img/Screenshot%202025-07-10%20204339.png)
+<img width="975" height="578" alt="Screenshot 2025-07-10 204354" src="https://github.com/user-attachments/assets/d341276b-4d68-48eb-a2f4-e294fdaafc92" />
+<img width="450" height="172" alt="Screenshot 2025-07-10 030416" src="https://github.com/user-attachments/assets/570b93b3-a86e-4ba3-b8aa-22fe21ff628d" />
+<img width="973" height="593" alt="Screenshot 2025-07-10 204239" src="https://github.com/user-attachments/assets/fafa8b3e-6029-4809-98b7-4855af9ae886" />
+<img width="424" height="261" alt="Screenshot 2025-07-10 002625" src="https://github.com/user-attachments/assets/56d7d25c-88c1-4832-9b7a-34cffa67fb56" />
+<img width="968" height="575" alt="Screenshot 2025-07-10 204223" src="https://github.com/user-attachments/assets/cd87ba0a-f544-4093-83d5-090104289a09" />
+<img width="958" height="618" alt="Screenshot 2025-07-10 204339" src="https://github.com/user-attachments/assets/15191baa-650a-4269-abbd-3333f445e416" />
+<img width="973" height="604" alt="Screenshot 2025-07-10 204326" src="https://github.com/user-attachments/assets/9850e2a0-3c93-42a2-b8eb-26a815bc1f8f" />
+<img width="975" height="561" alt="Screenshot 2025-07-10 204311" src="https://github.com/user-attachments/assets/3181379e-1251-4439-b7b1-a9270fbc599b" />
+<img width="968" height="575" alt="Screenshot 2025-07-10 204223" src="https://github.com/user-attachments/assets/bdaea5b6-0d26-401e-872c-b4452b466dce" />
+<img width="963" height="598" alt="Screenshot 2025-07-10 204252" src="https://github.com/user-attachments/assets/ade7ec21-3f4a-4824-ad9b-d98f225deb6d" />
+
 
 ## Overview
 
